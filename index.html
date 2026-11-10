@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Découvrez l’acupuncture et la médecine chinoise avec Quentin Savigny. Un espace pour ralentir et prendre soin de soi."
+    >
+    <meta name="theme-color" content="#f7f3eb">
+    <title>Quentin Savigny — Acupuncture &amp; médecine chinoise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#accueil" aria-label="Quentin Savigny, accueil">
+        <span class="wordmark__mark" aria-hidden="true">q</span>
+        <span>Quentin Savigny</span>
+      </a>
+      <a class="header-link" href="mailto:exemple@medchinoise.fr">Prendre rendez-vous</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil" aria-labelledby="hero-title">
+        <div class="hero__image" role="img" aria-label="Lumière douce du soleil levant dans un paysage verdoyant"></div>
+        <div class="hero__content">
+          <p class="eyebrow"><span class="eyebrow__line"></span> Soins traditionnels chinois</p>
+          <h1 id="hero-title">Médecine chinoise<br>&amp; <em>acupuncture</em></h1>
+          <p class="hero__intro">
+            Un accompagnement attentif pour prendre soin de votre équilibre et
+            retrouver un peu d’espace pour vous.
+          </p>
+          <a class="button button--coral" href="mailto:exemple@medchinoise.fr">
+            Prendre rendez-vous</span>
+          </a>
+          <a class="button button--light" href="#contact">
+            Me joindre</span>
+          </a>
+        </div>
+        <div class="hero__caption" aria-hidden="true">
+          <span>Quentin Savigny · Une écoute à votre rythme</span>
+          <span class="hero__caption-dot"></span>
+        </div>
+      </section>
+
+      <section class="approach" aria-labelledby="approach-title">
+        <div class="approach__heading reveal">
+          <p class="eyebrow eyebrow--green"><span class="eyebrow__line"></span> Une approche complémentaire</p>
+          <h2 id="approach-title">Mieux comprendre<br><em>ces pratiques.</em></h2>
+        </div>
+        <div class="approach__content">
+          <article class="approach__item reveal">
+            <span class="approach__number" aria-hidden="true">01</span>
+            <div>
+              <h3>L’acupuncture</h3>
+              <p>
+                Issue de la médecine chinoise, l’acupuncture stimule des points
+                précis du corps à l’aide de fines aiguilles, dans le cadre d’une
+                séance adaptée à chaque personne.
+              </p>
+            </div>
+          </article>
+          <article class="approach__item reveal">
+            <span class="approach__number" aria-hidden="true">02</span>
+            <div>
+              <h3>La médecine chinoise</h3>
+              <p>
+                Cette tradition envisage la personne dans sa globalité et s’intéresse
+                à son équilibre. La séance commence par un échange pour comprendre
+                vos attentes et votre situation.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="wellbeing" id="bien-etre" aria-labelledby="wellbeing-title">
+        <div class="wellbeing__intro reveal">
+          <p class="eyebrow eyebrow--green"><span class="eyebrow__line"></span> L’art de prendre soin de soi</p>
+          <h2 id="wellbeing-title">Cultiver votre vitalité,<br>à votre <em>rythme.</em></h2>
+          <p class="wellbeing__text">
+            La médecine chinoise considère la personne dans son ensemble. Chaque
+            séance s’ouvre sur un temps d’échange pour mieux comprendre vos besoins
+            et vous proposer un accompagnement adapté, dans un cadre bienveillant.
+          </p>
+          <p class="wellbeing__note">Une rencontre, une attention, un temps pour vous.</p>
+        </div>
+
+        <aside class="contact-card reveal" id="contact" aria-labelledby="contact-title">
+          <div class="contact-card__top">
+            <span class="contact-card__icon" aria-hidden="true">✳</span>
+            <span class="contact-card__label">Faisons connaissance</span>
+          </div>
+          <h3 id="contact-title">Un premier échange&nbsp;?</h3>
+          <p>
+            Praticien en acupuncture et médecine chinoise, Quentin Savigny privilégie
+            l’écoute et le dialogue. Il prend le temps de comprendre vos attentes
+            afin de proposer un accompagnement adapté à votre situation.
+          </p>
+          <div class="contact-card__details">
+            <span class="contact-card__name">Quentin Savigny</span>
+            <span>Acupuncture &amp; médecine chinoise</span>
+            <a class="contact-card__email" href="mailto:exemple@medchinoise.fr">exemple@medchinoise.fr</a>
+          </div>
+          <a class="button button--dark" href="mailto:exemple@medchinoise.fr" aria-label="Écrire à Quentin Savigny">
+            Écrire à Quentin</span>
+          </a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Quentin Savigny</span>
+      <span>Acupuncture &amp; médecine chinoise</span>
+      <a href="#accueil">Retour en haut ↑</a>
+    </footer>
+    <script>
+      const revealElements = document.querySelectorAll(".reveal");
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (revealElements.length && !prefersReducedMotion && "IntersectionObserver" in window) {
+        document.documentElement.classList.add("has-reveal");
+
+        const revealObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15, rootMargin: "0px 0px -35px 0px" },
+        );
+
+        revealElements.forEach((element, index) => {
+          element.style.setProperty("--reveal-delay", `${Math.min(index % 3, 2) * 110}ms`);
+          revealObserver.observe(element);
+        });
+      }
+    </script>
+  </body>
+</html>
